@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Recipe Sharing Website with popular and easy-to-make recipes for every occasion.">
+  <meta name="author" content="Recipe Hub">
+  <title>Pasta primavera</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* Global body styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-image: url('https://plus.unsplash.com/premium_photo-1667030986194-1ede16810993?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVudSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D');
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar custom styling */
+    #navbar {
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for navbar */
+    }
+
+    #navbar .navbar-brand img {
+      max-height: 50px; /* Adjust logo size */
+    }
+
+    #navbar .navbar-nav .nav-link {
+      color: #fff;
+    }
+
+    #navbar .navbar-nav .nav-link:hover {
+      color: #FFD700; /* Gold color on hover */
+    }
+
+    .navbar-toggler-icon {
+      background-color: #fff;
+    }
+
+    /* Content container */
+    .content-container {
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    /* Recipe image */
+    .content-container img {
+      width: 100%; /* Make image responsive */
+      height: 300px; /* Fix height */
+      object-fit: cover; /* Ensure the image scales proportionally */
+      border-radius: 8px;
+    }
+
+    /* Section title styles */
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #4CAF50; /* Green color */
+      margin-bottom: 15px;
+    }
+
+    /* Ingredients & Instructions styles */
+    .ingredients, .recipe-instructions {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    /* Unordered list for ingredients */
+    .ingredients ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    /* Ordered list for instructions */
+    .recipe-instructions ol {
+      list-style-type: decimal;
+      padding-left: 20px;
+    }
+
+    /* Color adjustments for text */
+    .ingredients li, .recipe-instructions li {
+      color: #333; /* Dark text for better readability */
+    }
+
+    .section-title {
+      color: #4CAF50; /* Green color for titles */
+    }
+
+    /* Media Query for smaller screens */
+    @media (max-width: 768px) {
+      .content-container {
+        padding: 15px;
+        margin-top: 15px;
+      }
+
+      .section-title {
+        font-size: 20px;
+      }
+
+      .content-container img {
+        height: 250px; /* Adjust image height for smaller screens */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <!-- Logo positioned here -->
+        <img src="logo.jpg" alt="Recipe Hub Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="submit.html">Submit Recipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pasta.html">Pasta Primavera</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="salad.html">Caesar Salad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dessert.html">Chocolate Mousse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="smoothie.html">Berry Smoothie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="vegan.html">Vegan Tacos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ramen.html">Ramen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Recipe Content Section -->
+  <div class="content-container">
+    <!-- Recipe Image -->
+    <img src="Pasta.jpg" alt="Pasta Primavera" class="img-fluid mb-4">
+
+    <!-- Ingredients Section -->
+    <div class="ingredients">
+      <h3 class="section-title">Ingredients</h3>
+      <ul>
+        <li>1 heaping cup broccoli florets</li>
+        <li>4 asparagus spears, trimmed and cut into 1-inch segments</li>
+        <li>1/2 cup snow peas</li>
+        <li>1/2 pound angel hair pasta or spaghetti</li>
+        <li>4 tablespoons unsalted butter</li>
+        <li>3 cloves garlic, minced</li>
+        <li>1 small zucchini, diced</li>
+        <li>3 Roma or other paste tomatoes, seeded and diced</li>
+        <li>1/4 cup chicken or vegetable stock</li>
+        <li>1/2 cup heavy cream</li>
+        <li>1/2 cup peas, fresh or frozen</li>
+        <li>1/2 cup grated Parmesan cheese</li>
+        <li>12 basil leaves, chopped</li>
+        <li>Kosher salt</li>
+      </ul>
+    </div>
+
+    <!-- Recipe Instructions Section -->
+    <div class="recipe-instructions">
+      <h3 class="section-title">Preparation Instructions</h3>
+      <ol>
+        <li>Blanch the broccoli, asparagus, snow peas: Get a large pot of water boiling. Salt it well. It should taste like the sea. Fill a large bowl with ice water. Boil the broccoli for 1 minute. Add the asparagus and boil another minute. Add the snow peas and boil for 30 more seconds. Remove all the vegetables and plunge them into the ice water. Once they’re cool, drain in a colander.</li>
+        <li>Sauté the zucchini and garlic, then add the tomatoes: In a large sauté pan, heat the butter over medium-high heat. When the butter is hot, add the garlic and zucchini and sauté 1 minute. Add the diced tomatoes and sauté another 2 minutes, stirring often.</li>
+        <li>Add the stock, cream, blanched vegetables, and peas: Pour in the chicken or vegetable stock and turn the heat to high to bring it to a boil. Add the cream and toss in all the vegetables you boiled, plus the peas. Stir to combine. Turn the heat down until the cream-chicken broth mixture is just simmering, not boiling.</li>
+        <li>Add the Parmesan: Add the Parmesan cheese and stir to combine. If the sauce seems too thick—it should be pretty thick, but not gloppy—add some more chicken broth, cream, or water.</li>
+        <li>Boil the pasta: If you are using spaghetti, you will want to start cooking it before you begin sautéing the garlic and zucchini. Angel hair will only need 1 to 2 minutes to cook, vermicelli or spaghetti can take 8 to 12 minutes.</li>
+        <li>Toss the pasta and serve: As soon as the pasta is done, transfer it with tongs into the sauce and stir to combine. Add the basil now, and taste for salt. Add salt if needed. Grind some black pepper over everything and serve immediately.</li>
+      </ol>
+    </div>
+  </div>
+
+</body>
+</html>
